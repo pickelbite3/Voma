@@ -1,2 +1,3 @@
 Two cards fly onto the screen or with some sort of animation, to select wether to sign up or login, also cards can be placed down on the debate table to show ideas. 
 Dark/Light mode, or some way to make it more accesible for those who might require light mode
+y
