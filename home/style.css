@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {--text: #d6dce1;
+--background: #191f22;
+--primary: #dcb66e;
+--secondary: #848f96;
+--accent: #1f2327;
+
+
+}
+
+/*
+Source - https://stackoverflow.com/a
+Posted by Artem Medvedev, modified by community. See post 'Timeline' for change history
+Retrieved 2025-11-08, License - CC BY-SA 4.0
+*/
+/* fixes flickering text in buttons/links that scale */
+.no-flickr {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family: "Raleway", sans-serif;
+    scroll-behavior: smooth;
+    background: linear-gradient(45deg, var(--accent), var(--background));
+    color: var(--text);
+}
+
+
+
+#name {
+    font-weight: 800;
+    text-align: center;
+    color: var(--text);
+    font-size: 3rem;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px;
+    padding: 5px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(59, 68, 76, 0.3);/*  must change this rgba to the new color scheme if applicable */
+}
+
+#header h1 {
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 10px;
+}
+/* 
+#header div {
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 10px;
+} */
+
+#login-btn {
+    display: inline-block;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+#login-btn:hover {
+    box-shadow: 0 0 0 5px var(--primary);
+    color: var(--primary);
+}
+
+#create-acc-btn {
+    display: inline-block;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--background);
+    transition: all 0.3s ease;
+
+}
+
+#create-acc-btn:hover {
+    box-shadow: 0 0 0 5px var(--primary);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    transition: all 1s ease;
+}
+
+.container:hover {
+    transform: scale(1.01);
+}
+
+.container p {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container ul {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    margin: 5px;
+}
+
+
+#start-container {
+    margin-top: 100px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4rem;
+    margin: 50px;
+}
+
+#description {
+    font-size: 1.3rem;
+}
+
+#create-acc-btn-body {
+    display: inline-block;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px var(--primary);
+    margin: 40px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#create-acc-btn-body:hover {
+    transform: scale(1.1);
+    background-color: var(--primary);
+    box-shadow: 0 0 20px var(--primary);
+}
+
+hr {
+    height: 5px;
+    border: none;
+    background: linear-gradient(90deg, var(--secondary), var(--accent));
+    display: block;
+    width: 70%;
+    margin: 20px;
+    border-radius: 3px;
+}
+#info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 80%;
+    margin-bottom: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    justify-content: center;
+    align-items: center;
+
+    /* Layout control */
+}
+
+.container {
+    width: 80%;
+    background: var(--accent);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex: 1 1 auto;
+}
+
+.info-para {
+    height: 100%;
+    font-size: 1.2rem;
+    font-weight: bold
+}
+
+.info-title {
+    font-size: 2rem;
+    padding: 40px;
+    height: 100%;
+    background-color: var(--secondary);
+    color: var(--accent);
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--background);
+}
+
+#footer {
+    text-align: center;
+    height: 100px;
+    background-color: var(--accent);
+    padding: 20px;
+    width: 100%;
+}
+
+#footer a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}

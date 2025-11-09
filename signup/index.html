@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voma - Signup</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/4541982187.js" crossorigin="anonymous"></script> <!-- for font awesome icons -->
+</head>
+<body>
+    <div id="name">VOMA</div>
+
+  <div class="container">
+    <section class="step" id="one">
+      <p>Let's start with your email:</p>
+      <input type="email" placeholder="Enter your email" id="email-input"/>
+      <button class="next-btn" onclick="nextStep('#two')"><i class="fa-solid fa-arrow-right"></i></button>
+    </section>
+
+    <section class="step" id="two">
+      <p>Great! Now, what do you want people to see you as:</p>
+      <input type="text" placeholder="Choose your display name" />
+      <button class="next-btn" onclick="nextStep('#three')"><i class="fa-solid fa-arrow-right"></i></button>
+    </section>
+
+    <section class="step" id="three">
+      <p>Almost there! Please choose a password:</p>
+      <input id="pwd-input" type="password" placeholder="Enter a password" />
+      <button class="next-btn" onclick="nextStep('#four')"><i class="fa-solid fa-arrow-right"></i></button>
+    </section>
+
+    <section class="step" id="four">
+      <p>You're almost done! Just confirm your password:</p>
+      <span id="pwd-conf">
+        <input type="password" placeholder="Confirm your password" id="pwd-conf-input"/>
+        <span id="pwd-match-indicator"></span>
+      </span>
+
+      
+      <button class="next-btn" onclick="nextStep('#five')"><i class="fa-solid fa-arrow-right"></i></button>
+    </section>
+
+    <section class="step" id="five">
+      <p>We've sent a confirmation code to <span id="email-confirmation"></span>, click that link to finish account creation and verify email.</p>
+      <a href="#" id="resend-btn">Resend code</a>
+    </section>
+  </div>
+
+  <span id="back-btn" onclick="prevStep()"><i class="fa-solid fa-arrow-up"></i></span> <!-- will replace with icon at some point -->
+  <script src="signup.js"></script>
+</body>
+</html>
