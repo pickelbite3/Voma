@@ -5,22 +5,6 @@
 --primary: #dcb66e;
 --secondary: #848f96;
 --accent: #1f2327;
-
-
-}
-
-/*
-Source - https://stackoverflow.com/a
-Posted by Artem Medvedev, modified by community. See post 'Timeline' for change history
-Retrieved 2025-11-08, License - CC BY-SA 4.0
-*/
-/* fixes flickering text in buttons/links that scale */
-.no-flickr {
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
 }
 
 
